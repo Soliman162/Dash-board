@@ -222,21 +222,18 @@ class Ui_MainWindow(QObject,object):
         self.speed.setPixmap(QtGui.QPixmap(f"{path}/{speed}.png"))
 
     def main_task(self):
-        # bufferSize = 6
-        # ServerPort = 2222
-        # ServerIP = '192.168.1.12'
-        # current_KM = 0
-        # start_hour = int(datetime.now().strftime("%H"))
-        # start_time = int(datetime.now().strftime("%M"))
+        bufferSize = 6
+        ServerPort = 2222
+        ServerIP = '192.168.1.12'
 
         current_hour = int(datetime.now().strftime("%H"))
         labels_data = read_labels()
-        """ bytesTosend = labels_data.encode('utf-8')
+        bytesTosend = labels_data.encode('utf-8')
         RPISocket = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
         RPISocket.bind((ServerIP,ServerPort))
-        speed_data,address = RPISocket.recvfrom(bufferSize) """
-        speed_data = 50#speed_data.decode('utf-8')
-        #RPISocket.sendto(bytesTosend,address)
+        speed_data,address = RPISocket.recvfrom(bufferSize) 
+        speed_data = speed_data.decode('utf-8')
+        RPISocket.sendto(bytesTosend,address)
 
         self.set_right_sign_state(labels_data[Right_sign_bit])
         self.set_left_sign_state(labels_data[Left_sign_bit])
