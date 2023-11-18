@@ -1,1 +1,2 @@
 recipes-core/psplash
+recipes-connectivity/wpa-supplicant/wpa-supplicant/wpa_supplicant-nl80211-wlan0.conf.example
