@@ -30,9 +30,6 @@ IMAGE_INSTALL:append = " gcc cmake make gdb ninja"
 # install tzdata
 IMAGE_INSTALL:append = " tzdata tzdata-africa"
 
-IMAGE_INSTALL_:append = " psplash"
-IMAGE_FEATURES += " splash "
-
 # install libpng for support png
 IMAGE_INSTALL:append = " libpng"
 
@@ -46,6 +43,8 @@ IMAGE_INSTALL:append = " net-tools ethtool"
 IMAGE_INSTALL += " kernel-modules car-ecu-buttons-mod"
 
 IMAGE_INSTALL:append = " photos dash-board"
+
+IMAGE_INSTALL:append = " openssh"
 
 #install systemd service file
 IMAGE_INSTALL:append = "  dash-board-start" 
