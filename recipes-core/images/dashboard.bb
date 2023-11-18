@@ -1,19 +1,15 @@
-# custom-rpi image
 require /home/soliman/Embedded_Linux/yocto_project/poky/meta/recipes-core/images/core-image-base.bb
 require /home/soliman/Embedded_Linux/yocto_project/poky/meta/recipes-graphics/images/core-image-x11.bb
-#################################################################################################################################
+#######################################################################################################
 
 # set image file format
-#IMAGE_FSTYPES += "wic wic.bz2 wic.bmap"
+IMAGE_FSTYPES += "wic wic.bz2 wic.bmap"
 
 # Remove old image 
 RM_OLD_IMAGE = "1"
 
 # install vim & python3 
 IMAGE_INSTALL += "python3 python3-pyqt5 qtbase qtx11extras vim"
-
-# install linux firmware
-#IMAGE_INSTALL += "linux-firmware-rpidistro"
 
 IMAGE_INSTALL:append = " systemd systemd-conf"
 
@@ -34,14 +30,14 @@ IMAGE_INSTALL:append = " gcc cmake make gdb ninja"
 # install tzdata
 IMAGE_INSTALL:append = " tzdata tzdata-africa"
 
-IMAGE_INSTALL_:ppend = " psplash"
+IMAGE_INSTALL_:append = " psplash"
 IMAGE_FEATURES += " splash "
 
 # install libpng for support png
 IMAGE_INSTALL:append = " libpng"
 
 # install x server
-IMAGE_INSTALL:append = " x11vnc xserver-xf86-config xserver-xorg"
+IMAGE_INSTALL:append = " x11vnc xserver-xf86-config xserver-xorg xserver-nodm-init"
 
 # install net-tools
 IMAGE_INSTALL:append = " net-tools ethtool"

@@ -18,7 +18,7 @@ SRC_URI = "file:///home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashb
 
 SRC_URI[md5sum] = "07dce43127ca737d8984fb787a4c18ef"
 
-RDEPENDS_${PN} = " python3  python3-pyqt5  qtconnectivity qtbase qtx11extras "
+RDEPENDS_${PN} = " python3  python3-pyqt5 qtbase qtx11extras xserver-nodm-init"
 
 S = "${WORKDIR}"
 
