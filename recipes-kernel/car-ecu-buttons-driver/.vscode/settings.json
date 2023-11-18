@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "fs.h": "c",
-        "stat.h": "c",
-        "gpio.h": "c",
-        "irq.h": "c"
-    },
-    "ros.distro": "noetic"
-}
