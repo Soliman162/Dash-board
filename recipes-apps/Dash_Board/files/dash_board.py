@@ -9,7 +9,8 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import QObject, QTimer, QFile ,QIODevice, QTime
-# import socket
+# from PyQt5.QtNetwork import QAbstractSocket, QTcpServer,QTcpSocket, QHostAddress
+import socket
 
 path = "/home/images"
 driver_file_path = "/dev/car_ecu_buttons"
@@ -47,7 +48,7 @@ class Ui_MainWindow(QObject,object):
         self.timer.setInterval(200)
         self.timer.timeout.connect(self.main_task)
         self.timer.start()
-        
+                
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 480)
@@ -222,20 +223,21 @@ class Ui_MainWindow(QObject,object):
         return str(line)
         
     def main_task(self):
-        # bufferSize = 6
-        # ServerPort = 2222
-        # ServerIP = '192.168.1.12'
+        bufferSize = 6
+        ServerPort = 2222
+        ServerIP = '192.168.1.12'
 
         current_hour = int(QTime.currentTime().hour())
         labels_data = self.readfile()
-        # bytesTosend = labels_data.encode('utf-8')
-        # RPISocket = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
-        # RPISocket.bind((ServerIP,ServerPort))
-        # speed_data,address = RPISocket.recvfrom(bufferSize) 
-        # speed_data = speed_data.decode('utf-8')
-        # RPISocket.sendto(bytesTosend,address)
         
-        speed_data = 50
+        bytesTosend = labels_data.encode('utf-8')
+        RPISocket =  socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+        RPISocket.bind((ServerIP,ServerPort))
+        speed_data,address = RPISocket.recvfrom(bufferSize) 
+        speed_data = speed_data.decode('utf-8')
+        RPISocket.sendto(bytesTosend,address)
+        
+        # speed_data = 50
 
         self.set_right_sign_state(labels_data[Right_sign_bit])
         self.set_left_sign_state(labels_data[Left_sign_bit])
@@ -245,7 +247,7 @@ class Ui_MainWindow(QObject,object):
         self.set_lable_running_light(not(int(labels_data[running_light])))
         self.set_lable_high_light(not(int(labels_data[high_light_bit])))
 
-        self.Set_speed(speed_data)
+        self.Set_speed(int(speed_data))
         current_minute = QTime.currentTime().minute()
         current_time = int(current_minute) +(60*(current_hour-self.start_hour))
         Elapsed_time = current_time - self.start_time
