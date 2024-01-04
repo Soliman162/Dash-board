@@ -23,8 +23,8 @@ RDEPENDS_${PN} = " python3  python3-pyqt5 qtbase qtx11extras xserver-nodm-init"
 S = "${WORKDIR}"
 
 do_install(){
-    install -d ${D}/home/images
-    install -m 0777 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/dash_board.py ${D}/home/images
+    install -d ${D}/home/root
+    install -m 0777 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/dash_board.py ${D}/home/root
 }
 
-FILES_${PN} += "home/images/dash_board.py"
+FILES_${PN} += "home/root/dash_board.py"

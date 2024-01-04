@@ -3,10 +3,10 @@ Description=dash-board-service-ctl
 After=multi-user.target
 
 [Service]
-Type=simple
+Type=Application
 User=root
 Environment="DISPLAY=:0"
-ExecStart=/usr/bin/python3 /home/images/dash_board.py
+ExecStart=/home/root/dash_board.py
 Restart=on-failure
 
 [Install]

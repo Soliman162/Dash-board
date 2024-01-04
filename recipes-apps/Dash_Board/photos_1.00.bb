@@ -93,154 +93,154 @@ SRC_URI = " \
 S = "${WORKDIR}"
 
 do_install(){
-    install -d ${D}/home/images
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/Background.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/EVER.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/High_light.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/Horn.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/Neutrino_logo.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/Park.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/Runing_light.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/Turn_left_0.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/Turn_left_1.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/Turn_right_0.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/Turn_right_1.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/0.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/10.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/11.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/12.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/13.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/14.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/15.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/16.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/17.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/18.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/19.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/1.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/20.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/21.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/22.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/23.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/24.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/25.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/26.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/27.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/28.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/29.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/2.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/30.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/31.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/32.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/33.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/34.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/35.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/36.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/37.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/38.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/39.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/3.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/40.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/41.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/42.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/43.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/44.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/45.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/46.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/47.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/48.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/49.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/4.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/50.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/51.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/52.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/53.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/54.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/55.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/56.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/57.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/58.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/59.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/5.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/60.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/6.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/7.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/8.png ${D}/home/images/
-    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/9.png ${D}/home/images/
+    install -d ${D}/home/root
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/Background.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/EVER.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/High_light.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/Horn.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/Neutrino_logo.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/Park.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/Runing_light.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/Turn_left_0.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/Turn_left_1.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/Turn_right_0.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/labels/Turn_right_1.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/0.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/10.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/11.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/12.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/13.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/14.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/15.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/16.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/17.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/18.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/19.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/1.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/20.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/21.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/22.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/23.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/24.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/25.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/26.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/27.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/28.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/29.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/2.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/30.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/31.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/32.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/33.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/34.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/35.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/36.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/37.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/38.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/39.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/3.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/40.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/41.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/42.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/43.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/44.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/45.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/46.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/47.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/48.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/49.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/4.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/50.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/51.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/52.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/53.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/54.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/55.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/56.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/57.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/58.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/59.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/5.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/60.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/6.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/7.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/8.png ${D}/home/root/
+    install -m 0770 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/speedometer/9.png ${D}/home/root/
 }
 
 FILES_${PN} += " \
-/home/images/Background.png \
-home/images/EVER.png \
-home/images/High_light.png \
-home/images/Horn.png \
-home/images/Neutrino_logo.png \
-home/images/Park.png \
-home/images/Runing_light.png \
-home/images/Turn_left_0.png \
-home/images/Turn_left_1.png \
-home/images/Turn_right_0.png \
-home/images/Turn_right_1.png \
-home/images/0.png \
-home/images/10.png \
-home/images/11.png \
-home/images/12.png \
-home/images/13.png \
-home/images/14.png \
-home/images/15.png \
-home/images/16.png \
-home/images/17.png \
-home/images/18.png \
-home/images/19.png \
-home/images/1.png \
-home/images/20.png \
-home/images/21.png \
-home/images/22.png \
-home/images/23.png \
-home/images/24.png \
-home/images/25.png \
-home/images/26.png \
-home/images/27.png \
-home/images/28.png \
-home/images/29.png \
-home/images/2.png \
-home/images/30.png \
-home/images/31.png \
-home/images/32.png \
-home/images/33.png \
-home/images/34.png \
-home/images/35.png \
-home/images/36.png \
-home/images/37.png \
-home/images/38.png \
-home/images/39.png \
-home/images/3.png \
-home/images/40.png \
-home/images/41.png \
-home/images/42.png \
-home/images/43.png \
-home/images/44.png \
-home/images/45.png \
-home/images/46.png \
-home/images/47.png \
-home/images/48.png \
-home/images/49.png \
-home/images/4.png \
-home/images/50.png \
-home/images/51.png \
-home/images/52.png \
-home/images/53.png \
-home/images/54.png \
-home/images/55.png \
-home/images/56.png \
-home/images/57.png \
-home/images/58.png \
-home/images/59.png \
-home/images/5.png \
-home/images/60.png \
-home/images/6.png \
-home/images/7.png \
-home/images/8.png \
-home/images/9.png \
+/home/root/Background.png \
+home/root/EVER.png \
+home/root/High_light.png \
+home/root/Horn.png \
+home/root/Neutrino_logo.png \
+home/root/Park.png \
+home/root/Runing_light.png \
+home/root/Turn_left_0.png \
+home/root/Turn_left_1.png \
+home/root/Turn_right_0.png \
+home/root/Turn_right_1.png \
+home/root/0.png \
+home/root/10.png \
+home/root/11.png \
+home/root/12.png \
+home/root/13.png \
+home/root/14.png \
+home/root/15.png \
+home/root/16.png \
+home/root/17.png \
+home/root/18.png \
+home/root/19.png \
+home/root/1.png \
+home/root/20.png \
+home/root/21.png \
+home/root/22.png \
+home/root/23.png \
+home/root/24.png \
+home/root/25.png \
+home/root/26.png \
+home/root/27.png \
+home/root/28.png \
+home/root/29.png \
+home/root/2.png \
+home/root/30.png \
+home/root/31.png \
+home/root/32.png \
+home/root/33.png \
+home/root/34.png \
+home/root/35.png \
+home/root/36.png \
+home/root/37.png \
+home/root/38.png \
+home/root/39.png \
+home/root/3.png \
+home/root/40.png \
+home/root/41.png \
+home/root/42.png \
+home/root/43.png \
+home/root/44.png \
+home/root/45.png \
+home/root/46.png \
+home/root/47.png \
+home/root/48.png \
+home/root/49.png \
+home/root/4.png \
+home/root/50.png \
+home/root/51.png \
+home/root/52.png \
+home/root/53.png \
+home/root/54.png \
+home/root/55.png \
+home/root/56.png \
+home/root/57.png \
+home/root/58.png \
+home/root/59.png \
+home/root/5.png \
+home/root/60.png \
+home/root/6.png \
+home/root/7.png \
+home/root/8.png \
+home/root/9.png \
 "
 
 
