@@ -9,22 +9,18 @@
 # this is not accurate with respect to the licensing of the software being built (it
 # will not be in most cases) you must specify the correct value before using this
 # recipe for anything other than initial testing/development!
-#LICENSE = "CLOSED"
-#LIC_FILES_CHKSUM = ""
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
+LICENSE = "CLOSED"
+LIC_FILES_CHKSUM = ""
 
-SRC_URI = "file:///home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/dash_board.py"
+SRC_URI = "file://Dash_board_App.tar.gz"
 
-SRC_URI[md5sum] = "07dce43127ca737d8984fb787a4c18ef"
+S="${WORKDIR}" 
 
-RDEPENDS_${PN} = " python3  python3-pyqt5 qtbase qtx11extras xserver-nodm-init"
+DEPENDS += "qtbase qtx11extras qtconnectivity xserver-xorg xserver-nodm-init libxcb xcb-util xcb-util-image"
 
-S = "${WORKDIR}"
+inherit cmake_qt5
 
-do_install(){
-    install -d ${D}/home/root
-    install -m 0777 /home/soliman/Embedded_Linux/yocto_project/projects/meta-Dashboard/recipes-apps/Dash_Board/files/dash_board.py ${D}/home/root
+do_install () {
+	install -d ${D}${sbindir}
+	install -m 0755 Dashboard ${D}${sbindir}/Dashboard
 }
-
-FILES_${PN} += "home/root/dash_board.py"
