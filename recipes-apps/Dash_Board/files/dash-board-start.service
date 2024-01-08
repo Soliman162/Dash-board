@@ -1,0 +1,13 @@
+[Unit]
+Description=dash-board-service-ctl
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=exec
+User=root
+ExecStart=/usr/sbin/Dashboard
+Restart=no
+
+[Install]
+WantedBy=graphical-session.target
