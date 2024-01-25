@@ -9,7 +9,7 @@ IMAGE_FSTYPES += "wic wic.bz2 wic.bmap"
 RM_OLD_IMAGE = "1"
 
 # install vim & python3 
-IMAGE_INSTALL += " qtbase qtx11extras qtconnectivity qtwayland qtdeclarative qtnetworkauth qttools meta-toolchain-qt5"
+IMAGE_INSTALL += " qtbase qtconnectivity qtmultimedia qtdeclarative qtnetworkauth qttools meta-toolchain-qt5"
 
 IMAGE_INSTALL:append = " systemd systemd-conf"
 
@@ -34,18 +34,18 @@ IMAGE_INSTALL:append = " tzdata tzdata-africa"
 IMAGE_INSTALL:append = " libpng"
 
 # install x server
-IMAGE_INSTALL:append = " x11vnc xserver-xf86-config xserver-xorg xserver-nodm-init"
+IMAGE_INSTALL:append = " xserver-xf86-config xserver-xorg xserver-nodm-init"
 
 # install xcb lib
-IMAGE_INSTALL:append = " libx11 libxcb xcb-util xcb-util-image wayland"
-
+# IMAGE_INSTALL:append = " libx11 libxcb xcb-util xcb-util-image"
+IMAGE_INSTALL:append = " eglfs"
 # install net-tools
 IMAGE_INSTALL:append = " net-tools ethtool"
 
 # install kernel modules
 IMAGE_INSTALL += " kernel-modules car-ecu-buttons-mod"
 
-IMAGE_INSTALL:append = " openssh dash-board-ui"
+IMAGE_INSTALL:append = " openssh dash-board-ui dash-board-start"
 
 ###############################################
 

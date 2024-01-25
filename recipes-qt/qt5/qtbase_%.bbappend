@@ -1,0 +1,2 @@
+FILESEXTRAPATHS:prepend := "${THISDIR}"
+PACKAGECONFIG:append = " gles2"

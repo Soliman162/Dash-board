@@ -16,7 +16,7 @@ SRC_URI = "file://Dash_board_App.tar.gz"
 
 S="${WORKDIR}" 
 
-DEPENDS += "qtbase qtx11extras qtconnectivity xserver-xorg xserver-nodm-init libxcb xcb-util xcb-util-image"
+DEPENDS += "qtbase qtconnectivity"
 
 inherit cmake_qt5
 
